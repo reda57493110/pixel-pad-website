@@ -92,10 +92,13 @@ function handleNavigation(e) {
     e.preventDefault();
     const targetId = e.target.getAttribute('href').substring(1);
     
-    // Update active nav link (only for main nav links)
-    if (e.target.classList.contains('nav-link')) {
+    // Update active nav link for both main nav and footer links
     navLinks.forEach(link => link.classList.remove('active'));
-    e.target.classList.add('active');
+    
+    // Find the corresponding main nav link and make it active
+    const correspondingNavLink = document.querySelector(`.nav-link[href="#${targetId}"]`);
+    if (correspondingNavLink) {
+        correspondingNavLink.classList.add('active');
     }
     
     // Show target section
@@ -122,7 +125,7 @@ function handleNavigation(e) {
     
     // Close mobile menu if open
     if (navMenu) {
-    navMenu.classList.remove('active');
+        navMenu.classList.remove('active');
     }
     if (hamburger) {
         hamburger.setAttribute('aria-expanded', 'false');
