@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXEL PAD - Professional Computer Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo-custom.svg" alt="PIXEL PAD Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-translate="nav.home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#shop" class="nav-link" data-translate="nav.shop">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-translate="nav.about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-translate="nav.contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#cart" class="nav-link cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#admin" class="nav-link admin-link" data-translate="nav.admin">Admin</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <div class="language-switcher">
+                    <button class="language-toggle" id="language-toggle" title="Change Language">
+                        <i class="fas fa-globe"></i>
+                        <span id="current-lang">EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown" id="language-dropdown">
+                        <button class="language-option" data-lang="en">
+                            <span class="flag">🇺🇸</span>
+                            <span>English</span>
+                        </button>
+                        <button class="language-option" data-lang="fr">
+                            <span class="flag">🇫🇷</span>
+                            <span>Français</span>
+                        </button>
+                        <button class="language-option" data-lang="ar">
+                            <span class="flag">🇲🇦</span>
+                            <span>العربية</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="theme-toggle" id="theme-toggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 data-translate="hero.title">Welcome to PIXEL PAD</h1>
+                    <p data-translate="hero.subtitle">Your trusted partner for premium computers and laptops</p>
+                    <div class="hero-buttons">
+                        <a href="#shop" class="btn btn-primary" data-translate="hero.shop">Shop Now</a>
+                        <a href="#about" class="btn btn-secondary" data-translate="hero.learn">Learn More</a>
+                    </div>
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span data-translate="hero.free_delivery">Free Delivery</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span data-translate="hero.warranty">8-Month Warranty</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-credit-card"></i>
+                            <span data-translate="hero.pay_delivery">Pay on Delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Packages Section -->
+            <div class="packages-section">
+                <div class="section-header">
+                    <h2>Our Packages</h2>
+                    <p>Choose the perfect package for your needs</p>
+                </div>
+                <div class="packages-grid">
+                    <!-- Business Package -->
+                    <div class="package-card business-package">
+                        <div class="package-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Business Package</h3>
+                        <p>Perfect for small to medium businesses</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> High-performance laptop or desktop</li>
+                            <li><i class="fas fa-check"></i> Professional software setup</li>
+                            <li><i class="fas fa-check"></i> 8-month warranty included</li>
+                            <li><i class="fas fa-check"></i> Free consultation & setup</li>
+                            <li><i class="fas fa-check"></i> Same-day delivery available</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="price">From $699</span>
+                            <span class="price-note">Pay on delivery</span>
+                        </div>
+                        <div class="package-actions">
+                            <button class="btn btn-primary">Choose Package</button>
+                            <a href="tel:+212779318061" class="btn btn-secondary">Call Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Working Package -->
+                    <div class="package-card working-package">
+                        <div class="package-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Working Package</h3>
+                        <p>Ideal for remote work and productivity</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Reliable laptop for work</li>
+                            <li><i class="fas fa-check"></i> Office software pre-installed</li>
+                            <li><i class="fas fa-check"></i> 8-month warranty included</li>
+                            <li><i class="fas fa-check"></i> Free technical support</li>
+                            <li><i class="fas fa-check"></i> Fast delivery service</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="price">From $499</span>
+                            <span class="price-note">Pay on delivery</span>
+                        </div>
+                        <div class="package-actions">
+                            <button class="btn btn-primary">Choose Package</button>
+                            <a href="tel:+212779318061" class="btn btn-secondary">Call Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="shop" class="section">
+            <div class="shop-header">
+                <h2>Our Products</h2>
+                <div class="category-filter">
+                    <button class="filter-btn active" data-category="all">All Products</button>
+                    <button class="filter-btn" data-category="Desktop">Desktops</button>
+                    <button class="filter-btn" data-category="Laptop">Laptops</button>
+                    <button class="filter-btn" data-category="Accessories">Accessories</button>
+                </div>
+            </div>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Product Details Modal -->
+        <div id="product-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="product-details" id="product-details">
+                    <!-- Product details will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Section -->
+        <section id="cart" class="section">
+            <div class="cart-container">
+                <h2>Shopping Cart</h2>
+                <div class="cart-content">
+                    <div class="cart-items" id="cart-items">
+                        <div class="empty-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Your cart is empty</p>
+                            <a href="#shop" class="btn btn-primary">Start Shopping</a>
+                        </div>
+                    </div>
+                    <div class="cart-summary" id="cart-summary" style="display: none;">
+                        <h3>Order Summary</h3>
+                        <div class="summary-details">
+                            <div class="summary-row">
+                                <span>Subtotal:</span>
+                                <span id="cart-subtotal">$0.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Delivery:</span>
+                                <span>Free</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total:</span>
+                                <span id="cart-total">$0.00</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full" id="checkout-btn">Proceed to Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Checkout Section -->
+        <section id="checkout" class="section">
+            <div class="checkout-container">
+                <h2>Checkout</h2>
+                <div class="checkout-content">
+                    <div class="checkout-form">
+                        <h3>Customer Information</h3>
+                        <form id="checkout-form">
+                            <div class="form-group">
+                                <label for="customer-name">Full Name *</label>
+                                <input type="text" id="customer-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-phone">Phone Number *</label>
+                                <input type="tel" id="customer-phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-email">Email</label>
+                                <input type="email" id="customer-email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-address">Delivery Address *</label>
+                                <textarea id="customer-address" name="address" rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-notes">Order Notes</label>
+                                <textarea id="customer-notes" name="notes" rows="2" placeholder="Any special instructions..."></textarea>
+                            </div>
+                            <div class="payment-method">
+                                <h4>Payment Method</h4>
+                                <div class="payment-option">
+                                    <input type="radio" id="cod" name="payment" value="COD" checked>
+                                    <label for="cod">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        Cash on Delivery (COD)
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Place Order</button>
+                        </form>
+                    </div>
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div class="order-items" id="checkout-items">
+                            <!-- Order items will be displayed here -->
+                        </div>
+                        <div class="order-total">
+                            <div class="total-row">
+                                <span>Total:</span>
+                                <span id="checkout-total">$0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admin Section -->
+        <section id="admin" class="section">
+            <div class="admin-container">
+                <div class="admin-login" id="admin-login">
+                    <h2>Admin Login</h2>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="admin-username">Username</label>
+                            <input type="text" id="admin-username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="admin-password">Password</label>
+                            <input type="password" id="admin-password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="admin-dashboard" id="admin-dashboard" style="display: none;">
+                    <h2>Order Management</h2>
+                    <div class="orders-table-container">
+                        <table class="orders-table">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Phone</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="orders-table-body">
+                                <!-- Orders will be loaded here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="about-container">
+                <div class="about-header">
+                    <h2 data-translate="about.title" class="about-title">About PIXEL PAD</h2>
+                    <p data-translate="about.subtitle" class="about-subtitle">Your trusted partner for premium computers and laptops</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="story-section">
+                        <div class="story-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="story-content">
+                            <h3 data-translate="about.story.title">Our Story</h3>
+                            <p data-translate="about.story.p1">PIXEL PAD was founded with a simple mission: to provide high-quality computers and laptops to customers across Morocco with the convenience of cash on delivery payment.</p>
+                            <p data-translate="about.story.p2">We understand that purchasing technology can be a significant investment, which is why we offer flexible payment options and comprehensive warranties to give you peace of mind.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 data-translate="about.features.delivery">Free Delivery</h4>
+                                <p data-translate="about.features.delivery_desc">Fast and reliable delivery across Morocco</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 data-translate="about.features.warranty">8-Month Warranty</h4>
+                                <p data-translate="about.features.warranty_desc">Comprehensive warranty on all products</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 data-translate="about.features.payment">Pay on Delivery</h4>
+                                <p data-translate="about.features.payment_desc">No upfront payment required</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h2 class="contact-title">Contact Us</h2>
+                    <p class="contact-subtitle">Get in touch with us for any inquiries or support</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-card address-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Address</h4>
+                            <p>Fes champs de cours</p>
+                            <a href="https://maps.google.com" target="_blank" class="contact-link">
+                                <i class="fas fa-external-link-alt"></i> View on Map
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card phone-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Phone & WhatsApp</h4>
+                            <p>+212779318061</p>
+                            <a href="tel:+212779318061" class="contact-link">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card whatsapp-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>WhatsApp</h4>
+                            <p>+212779318061</p>
+                            <a href="https://wa.me/212779318061" target="_blank" class="contact-link whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Chat Now
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card email-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Email</h4>
+                            <p>pixelpad77@gmail.com</p>
+                            <a href="mailto:pixelpad77@gmail.com" class="contact-link">
+                                <i class="fas fa-envelope"></i> Send Email
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card hours-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Business Hours</h4>
+                            <div class="hours-info">
+                                <p><strong>Mon-Fri:</strong> 9AM-6PM</p>
+                                <p><strong>Sat:</strong> 10AM-4PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section brand-section">
+                <div class="brand-info">
+                    <h3 class="brand-title">PIXEL PAD</h3>
+                    <p class="brand-description">Professional computer solutions with Cash on Delivery payment.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61558615438246" target="_blank" title="Follow us on Facebook" class="social-link facebook-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pixel.pad77?igsh=NWlubzJhMmszOTY4" target="_blank" title="Follow us on Instagram" class="social-link instagram-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/212779318061" target="_blank" title="Contact us on WhatsApp" class="social-link whatsapp-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:pixelpad77@gmail.com" title="Send us an email" class="social-link email-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+212779318061" title="Call us" class="social-link phone-link">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home" class="footer-link">Home</a></li>
+                    <li><a href="#shop" class="footer-link">Shop</a></li>
+                    <li><a href="#about" class="footer-link">About</a></li>
+                    <li><a href="#contact" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#shop?category=Desktop" class="footer-link">Desktops</a></li>
+                    <li><a href="#shop?category=Laptop" class="footer-link">Laptops</a></li>
+                    <li><a href="#shop?category=Accessories" class="footer-link">Accessories</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Warranty</a></li>
+                    <li><a href="#" class="footer-link">Returns</a></li>
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                    <li><a href="#" class="footer-link">Technical Support</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p class="copyright">© 2025 PIXEL PAD.com All rights reserved.</p>
+                <div class="footer-badges">
+                    <div class="badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure Payment</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-truck"></i>
+                        <span>Free Delivery</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content success-modal">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Order Placed Successfully!</h3>
+            <p>Your order has been placed and will be processed soon. You will receive a confirmation call shortly.</p>
+            <p><strong>Order ID: <span id="order-id"></span></strong></p>
+            <button class="btn btn-primary" onclick="closeSuccessModal()">Continue Shopping</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
