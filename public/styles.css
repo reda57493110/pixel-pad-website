@@ -1681,44 +1681,44 @@ body {
     transform: translateX(5px);
 }
 
-/* Support links with WhatsApp styling */
-.footer-section:last-of-type .footer-link.whatsapp-link {
+/* Support links styling */
+.footer-section:last-of-type .footer-link.support-link {
     display: flex;
     align-items: center;
     gap: 12px;
     padding: 12px 16px;
     border-radius: 8px;
     transition: all 0.3s ease;
-    background: rgba(37, 211, 102, 0.1);
-    border: 1px solid rgba(37, 211, 102, 0.2);
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
 }
 
-.footer-section:last-of-type .footer-link.whatsapp-link:hover {
-    background: rgba(37, 211, 102, 0.2);
-    border-color: #25d366;
+.footer-section:last-of-type .footer-link.support-link:hover {
+    background: rgba(59, 130, 246, 0.2);
+    border-color: var(--primary-color);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
-.footer-section:last-of-type .footer-link.whatsapp-link i {
-    color: #25d366;
+.footer-section:last-of-type .footer-link.support-link i {
+    color: var(--primary-color);
     font-size: 18px;
     transition: all 0.3s ease;
 }
 
-.footer-section:last-of-type .footer-link.whatsapp-link:hover i {
-    color: #128c7e;
+.footer-section:last-of-type .footer-link.support-link:hover i {
+    color: #1d4ed8;
     transform: scale(1.1);
 }
 
-.footer-section:last-of-type .footer-link.whatsapp-link span {
+.footer-section:last-of-type .footer-link.support-link span {
     font-weight: 600;
     color: var(--text-primary);
     transition: color 0.3s ease;
 }
 
-.footer-section:last-of-type .footer-link.whatsapp-link:hover span {
-    color: #25d366;
+.footer-section:last-of-type .footer-link.support-link:hover span {
+    color: var(--primary-color);
 }
 
 /* Support Section */

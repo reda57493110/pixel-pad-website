@@ -89,11 +89,6 @@ function setupEventListeners() {
 
 // Navigation handling
 function handleNavigation(e) {
-    // Don't prevent default for WhatsApp links
-    if (e.target.closest('.whatsapp-link')) {
-        return; // Let the WhatsApp link work normally
-    }
-    
     e.preventDefault();
     const targetId = e.target.getAttribute('href').substring(1);
     
