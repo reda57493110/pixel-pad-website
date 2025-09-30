@@ -1922,6 +1922,54 @@ body {
     border: 1px solid rgba(59, 130, 246, 0.3);
 }
 
+/* Product Warranty List */
+.product-warranty-list {
+    margin: 20px 0;
+}
+
+.warranty-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+    transition: all 0.3s ease;
+}
+
+.warranty-item:last-child {
+    border-bottom: none;
+}
+
+.warranty-item:hover {
+    background: rgba(59, 130, 246, 0.05);
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
+.product-type {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.warranty-period {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1d4ed8 100%);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    min-width: 80px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+    transition: all 0.3s ease;
+}
+
+.warranty-item:hover .warranty-period {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
 .warranty-conditions {
     background: var(--bg-secondary);
     padding: 40px;
