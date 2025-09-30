@@ -97,6 +97,32 @@ function handleNavigation(e) {
     e.preventDefault();
     const targetId = e.target.getAttribute('href').substring(1);
     
+    // Handle support section navigation
+    if (targetId.startsWith('support-')) {
+        // Scroll to the support section first
+        const supportSection = document.getElementById('support');
+        if (supportSection) {
+            supportSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Then scroll to the specific support subsection
+        setTimeout(() => {
+            const targetSubsection = document.getElementById(targetId);
+            if (targetSubsection) {
+                targetSubsection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 300);
+        
+        // Close mobile menu
+        if (navMenu) {
+            navMenu.classList.remove('active');
+        }
+        if (hamburger) {
+            hamburger.setAttribute('aria-expanded', 'false');
+        }
+        return;
+    }
+    
     // Update active nav link for both main nav and footer links
     navLinks.forEach(link => link.classList.remove('active'));
     
