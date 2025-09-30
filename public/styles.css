@@ -1681,6 +1681,29 @@ body {
     transform: translateX(5px);
 }
 
+/* Support links with WhatsApp styling */
+.footer-section:last-of-type .footer-link {
+    position: relative;
+    padding-left: 25px;
+}
+
+.footer-section:last-of-type .footer-link::before {
+    content: "\f232";
+    font-family: "Font Awesome 5 Brands";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #25d366;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.footer-section:last-of-type .footer-link:hover::before {
+    color: #128c7e;
+    transform: translateY(-50%) scale(1.1);
+}
+
 .footer-link:hover::before {
     width: 100%;
 }
