@@ -886,6 +886,29 @@ const translations = {
         'faq.contact.whatsapp': 'WhatsApp Support',
         'faq.contact.phone': 'Call Us',
         
+        // Returns translations
+        'returns.title': 'Returns & Exchanges',
+        'returns.subtitle': 'Easy returns and exchanges for your peace of mind',
+        'returns.return_policy.title': 'Return Policy',
+        'returns.return_policy.desc': 'Return any product within 7 days of purchase for a full refund or exchange.',
+        'returns.return_policy.item1': 'Original packaging required',
+        'returns.return_policy.item2': 'Product must be in original condition',
+        'returns.return_policy.item3': 'Receipt or proof of purchase needed',
+        'returns.exchange_policy.title': 'Exchange Policy',
+        'returns.exchange_policy.desc': 'Exchange your product for a different model or size within 14 days.',
+        'returns.exchange_policy.item1': 'Free exchange for different specifications',
+        'returns.exchange_policy.item2': 'Price difference applies if upgrading',
+        'returns.exchange_policy.item3': 'Same return conditions apply',
+        'returns.process.title': 'Return Process',
+        'returns.process.desc': 'Simple 3-step return process for your convenience.',
+        'returns.process.step1': 'Contact us via WhatsApp',
+        'returns.process.step2': 'We arrange free pickup',
+        'returns.process.step3': 'Refund or exchange processed',
+        'returns.contact.title': 'Need Help with Returns?',
+        'returns.contact.desc': 'Our support team is here to help with any return or exchange questions.',
+        'returns.contact.whatsapp': 'WhatsApp Support',
+        'returns.contact.phone': 'Call Us',
+        
         'warranty.title': '1-Year Warranty Coverage',
         'warranty.subtitle': 'Comprehensive protection for your PIXEL PAD products',
         'warranty.coverage.title': 'What\'s Covered',
@@ -1101,7 +1124,30 @@ const translations = {
         'faq.contact.title': 'Vous avez encore des questions ?',
         'faq.contact.desc': 'Vous ne trouvez pas la réponse que vous cherchez ? Notre équipe de support est là pour vous aider !',
         'faq.contact.whatsapp': 'Support WhatsApp',
-        'faq.contact.phone': 'Nous Appeler'
+        'faq.contact.phone': 'Nous Appeler',
+        
+        // Returns translations
+        'returns.title': 'Retours et Échanges',
+        'returns.subtitle': 'Retours et échanges faciles pour votre tranquillité d\'esprit',
+        'returns.return_policy.title': 'Politique de Retour',
+        'returns.return_policy.desc': 'Retournez tout produit dans les 7 jours suivant l\'achat pour un remboursement complet ou un échange.',
+        'returns.return_policy.item1': 'Emballage d\'origine requis',
+        'returns.return_policy.item2': 'Le produit doit être dans son état d\'origine',
+        'returns.return_policy.item3': 'Reçu ou preuve d\'achat nécessaire',
+        'returns.exchange_policy.title': 'Politique d\'Échange',
+        'returns.exchange_policy.desc': 'Échangez votre produit pour un modèle ou une taille différente dans les 14 jours.',
+        'returns.exchange_policy.item1': 'Échange gratuit pour différentes spécifications',
+        'returns.exchange_policy.item2': 'Différence de prix appliquée si mise à niveau',
+        'returns.exchange_policy.item3': 'Mêmes conditions de retour appliquées',
+        'returns.process.title': 'Processus de Retour',
+        'returns.process.desc': 'Processus de retour simple en 3 étapes pour votre commodité.',
+        'returns.process.step1': 'Contactez-nous via WhatsApp',
+        'returns.process.step2': 'Nous organisons la collecte gratuite',
+        'returns.process.step3': 'Remboursement ou échange traité',
+        'returns.contact.title': 'Besoin d\'Aide avec les Retours ?',
+        'returns.contact.desc': 'Notre équipe de support est là pour vous aider avec toute question de retour ou d\'échange.',
+        'returns.contact.whatsapp': 'Support WhatsApp',
+        'returns.contact.phone': 'Nous Appeler'
     },
     ar: {
         'nav.home': 'الرئيسية',
@@ -1264,7 +1310,30 @@ const translations = {
         'faq.contact.title': 'لا تزال لديك أسئلة؟',
         'faq.contact.desc': 'لا تجد الإجابة التي تبحث عنها؟ فريق الدعم لدينا هنا لمساعدتك!',
         'faq.contact.whatsapp': 'دعم واتساب',
-        'faq.contact.phone': 'اتصل بنا'
+        'faq.contact.phone': 'اتصل بنا',
+        
+        // Returns translations
+        'returns.title': 'الإرجاع والاستبدال',
+        'returns.subtitle': 'إرجاع واستبدال سهل لراحة بالك',
+        'returns.return_policy.title': 'سياسة الإرجاع',
+        'returns.return_policy.desc': 'أرجع أي منتج خلال 7 أيام من الشراء للحصول على استرداد كامل أو استبدال.',
+        'returns.return_policy.item1': 'التغليف الأصلي مطلوب',
+        'returns.return_policy.item2': 'يجب أن يكون المنتج في حالته الأصلية',
+        'returns.return_policy.item3': 'إيصال أو إثبات الشراء مطلوب',
+        'returns.exchange_policy.title': 'سياسة الاستبدال',
+        'returns.exchange_policy.desc': 'استبدل منتجك بنموذج أو حجم مختلف خلال 14 يوماً.',
+        'returns.exchange_policy.item1': 'استبدال مجاني للمواصفات المختلفة',
+        'returns.exchange_policy.item2': 'يتم تطبيق فرق السعر عند الترقية',
+        'returns.exchange_policy.item3': 'نفس شروط الإرجاع تنطبق',
+        'returns.process.title': 'عملية الإرجاع',
+        'returns.process.desc': 'عملية إرجاع بسيطة من 3 خطوات لراحتك.',
+        'returns.process.step1': 'اتصل بنا عبر واتساب',
+        'returns.process.step2': 'نرتب الاستلام المجاني',
+        'returns.process.step3': 'معالجة الاسترداد أو الاستبدال',
+        'returns.contact.title': 'تحتاج مساعدة في الإرجاع؟',
+        'returns.contact.desc': 'فريق الدعم لدينا هنا لمساعدتك في أي أسئلة حول الإرجاع أو الاستبدال.',
+        'returns.contact.whatsapp': 'دعم واتساب',
+        'returns.contact.phone': 'اتصل بنا'
     }
 };
 
