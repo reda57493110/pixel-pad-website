@@ -849,6 +849,43 @@ const translations = {
         'support.urgent_desc': 'For urgent matters, call us directly at +212779318061',
         'support.whatsapp': 'WhatsApp Support',
         'support.whatsapp_desc': 'Quick support via WhatsApp: +212779318061',
+        
+        // FAQ translations
+        'faq.title': 'Frequently Asked Questions',
+        'faq.subtitle': 'Find answers to common questions about PIXEL PAD products and services',
+        'faq.categories.products': 'Products & Services',
+        'faq.categories.payment': 'Payment & Delivery',
+        'faq.categories.warranty': 'Warranty & Support',
+        'faq.categories.technical': 'Technical Support',
+        'faq.products.q1': 'What types of computers do you sell?',
+        'faq.products.a1': 'We sell desktop computers, laptops, gaming PCs, and computer accessories. All products are available in both new and used conditions with different warranty periods.',
+        'faq.products.q2': 'Do you offer both new and used products?',
+        'faq.products.a2': 'Yes, we offer both new and used computers and accessories. Used products come with shorter warranty periods but are thoroughly tested and in good working condition.',
+        'faq.products.q3': 'Can I customize my computer order?',
+        'faq.products.a3': 'Yes, we offer customization options for desktop computers and gaming PCs. Contact us via WhatsApp to discuss your specific requirements and we\'ll provide a customized solution.',
+        'faq.payment.q1': 'What payment methods do you accept?',
+        'faq.payment.a1': 'We accept cash on delivery (COD) payments. You can pay when the product is delivered to your location. This ensures you\'re satisfied with your purchase before payment.',
+        'faq.payment.q2': 'Do you deliver nationwide?',
+        'faq.payment.a2': 'Yes, we provide free delivery across Morocco. Our delivery service covers all major cities and regions, ensuring your order reaches you safely and on time.',
+        'faq.payment.q3': 'How long does delivery take?',
+        'faq.payment.a3': 'Delivery typically takes 2-5 business days depending on your location. We\'ll provide tracking information once your order is shipped.',
+        'faq.warranty.q1': 'What warranty do you provide?',
+        'faq.warranty.a1': 'Warranty periods vary by product type and condition. New products: 6-12 months, Used products: 1-2 months. Desktop and laptop computers (used) have 2-month warranty, while other used products have 1-month warranty.',
+        'faq.warranty.q2': 'What does the warranty cover?',
+        'faq.warranty.a2': 'Our warranty covers manufacturing defects and hardware failures under normal use. It includes free repair or replacement service, free pickup and delivery, and 24/7 technical support.',
+        'faq.warranty.q3': 'How do I claim warranty service?',
+        'faq.warranty.a3': 'Contact us via WhatsApp at +212779318061 with your purchase receipt and issue description. We\'ll arrange free pickup, assess the issue, and provide repair or replacement within 3-5 days.',
+        'faq.technical.q1': 'Do you provide technical support?',
+        'faq.technical.a1': 'Yes, we offer 24/7 technical support for all our products. Our expert team can help with setup, troubleshooting, and maintenance questions via WhatsApp or phone.',
+        'faq.technical.q2': 'Can you help with computer setup?',
+        'faq.technical.a2': 'Absolutely! We provide free setup assistance for all computers. Our team can help with initial configuration, software installation, and basic troubleshooting.',
+        'faq.technical.q3': 'What if I need software installation?',
+        'faq.technical.a3': 'We can help with software installation and configuration. Contact us to discuss your specific software needs and we\'ll provide the appropriate assistance.',
+        'faq.contact.title': 'Still Have Questions?',
+        'faq.contact.desc': 'Can\'t find the answer you\'re looking for? Our support team is here to help!',
+        'faq.contact.whatsapp': 'WhatsApp Support',
+        'faq.contact.phone': 'Call Us',
+        
         'warranty.title': '1-Year Warranty Coverage',
         'warranty.subtitle': 'Comprehensive protection for your PIXEL PAD products',
         'warranty.coverage.title': 'What\'s Covered',
@@ -1028,7 +1065,43 @@ const translations = {
         'warranty.contact.title': 'Besoin d\'Aide pour la Garantie ?',
         'warranty.contact.desc': 'Notre équipe est prête à vous aider avec toute réclamation de garantie',
         'warranty.contact.whatsapp': 'Support WhatsApp',
-        'warranty.contact.phone': 'Appeler Maintenant'
+        'warranty.contact.phone': 'Appeler Maintenant',
+        
+        // FAQ translations
+        'faq.title': 'Questions Fréquemment Posées',
+        'faq.subtitle': 'Trouvez des réponses aux questions courantes sur les produits et services PIXEL PAD',
+        'faq.categories.products': 'Produits et Services',
+        'faq.categories.payment': 'Paiement et Livraison',
+        'faq.categories.warranty': 'Garantie et Support',
+        'faq.categories.technical': 'Support Technique',
+        'faq.products.q1': 'Quels types d\'ordinateurs vendez-vous ?',
+        'faq.products.a1': 'Nous vendons des ordinateurs de bureau, des ordinateurs portables, des PC gaming et des accessoires informatiques. Tous les produits sont disponibles en neuf et d\'occasion avec différentes périodes de garantie.',
+        'faq.products.q2': 'Proposez-vous des produits neufs et d\'occasion ?',
+        'faq.products.a2': 'Oui, nous proposons des ordinateurs et accessoires neufs et d\'occasion. Les produits d\'occasion ont des périodes de garantie plus courtes mais sont soigneusement testés et en bon état de fonctionnement.',
+        'faq.products.q3': 'Puis-je personnaliser ma commande d\'ordinateur ?',
+        'faq.products.a3': 'Oui, nous proposons des options de personnalisation pour les ordinateurs de bureau et les PC gaming. Contactez-nous via WhatsApp pour discuter de vos besoins spécifiques et nous vous fournirons une solution personnalisée.',
+        'faq.payment.q1': 'Quels modes de paiement acceptez-vous ?',
+        'faq.payment.a1': 'Nous acceptons les paiements à la livraison (COD). Vous pouvez payer lorsque le produit est livré à votre domicile. Cela garantit que vous êtes satisfait de votre achat avant le paiement.',
+        'faq.payment.q2': 'Livrez-vous dans tout le pays ?',
+        'faq.payment.a2': 'Oui, nous fournissons une livraison gratuite dans tout le Maroc. Notre service de livraison couvre toutes les grandes villes et régions, garantissant que votre commande vous arrive en toute sécurité et à temps.',
+        'faq.payment.q3': 'Combien de temps prend la livraison ?',
+        'faq.payment.a3': 'La livraison prend généralement 2-5 jours ouvrables selon votre localisation. Nous fournirons des informations de suivi une fois votre commande expédiée.',
+        'faq.warranty.q1': 'Quelle garantie fournissez-vous ?',
+        'faq.warranty.a1': 'Les périodes de garantie varient selon le type de produit et l\'état. Produits neufs : 6-12 mois, Produits d\'occasion : 1-2 mois. Les ordinateurs de bureau et portables (d\'occasion) ont une garantie de 2 mois, tandis que les autres produits d\'occasion ont une garantie de 1 mois.',
+        'faq.warranty.q2': 'Que couvre la garantie ?',
+        'faq.warranty.a2': 'Notre garantie couvre les défauts de fabrication et les pannes matérielles sous utilisation normale. Elle inclut un service de réparation ou de remplacement gratuit, la collecte et livraison gratuites, et un support technique 24/7.',
+        'faq.warranty.q3': 'Comment puis-je réclamer le service de garantie ?',
+        'faq.warranty.a3': 'Contactez-nous via WhatsApp au +212779318061 avec votre reçu d\'achat et la description du problème. Nous organiserons une collecte gratuite, évaluerons le problème et fournirons une réparation ou un remplacement dans les 3-5 jours.',
+        'faq.technical.q1': 'Fournissez-vous un support technique ?',
+        'faq.technical.a1': 'Oui, nous offrons un support technique 24/7 pour tous nos produits. Notre équipe d\'experts peut aider avec la configuration, le dépannage et les questions de maintenance via WhatsApp ou téléphone.',
+        'faq.technical.q2': 'Pouvez-vous aider avec la configuration de l\'ordinateur ?',
+        'faq.technical.a2': 'Absolument ! Nous fournissons une assistance de configuration gratuite pour tous les ordinateurs. Notre équipe peut aider avec la configuration initiale, l\'installation de logiciels et le dépannage de base.',
+        'faq.technical.q3': 'Et si j\'ai besoin d\'installation de logiciels ?',
+        'faq.technical.a3': 'Nous pouvons aider avec l\'installation et la configuration de logiciels. Contactez-nous pour discuter de vos besoins logiciels spécifiques et nous fournirons l\'assistance appropriée.',
+        'faq.contact.title': 'Vous avez encore des questions ?',
+        'faq.contact.desc': 'Vous ne trouvez pas la réponse que vous cherchez ? Notre équipe de support est là pour vous aider !',
+        'faq.contact.whatsapp': 'Support WhatsApp',
+        'faq.contact.phone': 'Nous Appeler'
     },
     ar: {
         'nav.home': 'الرئيسية',
@@ -1155,7 +1228,43 @@ const translations = {
         'warranty.contact.title': 'تحتاج دعم الضمان؟',
         'warranty.contact.desc': 'فريقنا جاهز لمساعدتك في أي مطالبات ضمان',
         'warranty.contact.whatsapp': 'دعم واتساب',
-        'warranty.contact.phone': 'اتصل الآن'
+        'warranty.contact.phone': 'اتصل الآن',
+        
+        // FAQ translations
+        'faq.title': 'الأسئلة الشائعة',
+        'faq.subtitle': 'اعثر على إجابات للأسئلة الشائعة حول منتجات وخدمات PIXEL PAD',
+        'faq.categories.products': 'المنتجات والخدمات',
+        'faq.categories.payment': 'الدفع والتوصيل',
+        'faq.categories.warranty': 'الضمان والدعم',
+        'faq.categories.technical': 'الدعم التقني',
+        'faq.products.q1': 'ما أنواع أجهزة الكمبيوتر التي تبيعونها؟',
+        'faq.products.a1': 'نبيع أجهزة الكمبيوتر المكتبية والمحمولة وأجهزة الألعاب وملحقات الكمبيوتر. جميع المنتجات متوفرة في حالات جديدة ومستعملة مع فترات ضمان مختلفة.',
+        'faq.products.q2': 'هل تقدمون منتجات جديدة ومستعملة؟',
+        'faq.products.a2': 'نعم، نقدم أجهزة كمبيوتر وملحقات جديدة ومستعملة. المنتجات المستعملة تأتي بفترات ضمان أقصر ولكنها مختبرة بعناية وفي حالة عمل جيدة.',
+        'faq.products.q3': 'هل يمكنني تخصيص طلب الكمبيوتر؟',
+        'faq.products.a3': 'نعم، نقدم خيارات التخصيص لأجهزة الكمبيوتر المكتبية وأجهزة الألعاب. اتصل بنا عبر واتساب لمناقشة متطلباتك المحددة وسنقدم لك حلاً مخصصاً.',
+        'faq.payment.q1': 'ما طرق الدفع التي تقبلونها؟',
+        'faq.payment.a1': 'نقبل الدفع عند التسليم (COD). يمكنك الدفع عند تسليم المنتج إلى موقعك. هذا يضمن رضاك عن مشترياتك قبل الدفع.',
+        'faq.payment.q2': 'هل تقدمون التوصيل على مستوى البلاد؟',
+        'faq.payment.a2': 'نعم، نقدم توصيل مجاني عبر المغرب. خدمة التوصيل لدينا تغطي جميع المدن والمناطق الرئيسية، مما يضمن وصول طلبك بأمان وفي الوقت المحدد.',
+        'faq.payment.q3': 'كم من الوقت يستغرق التوصيل؟',
+        'faq.payment.a3': 'يستغرق التوصيل عادة 2-5 أيام عمل حسب موقعك. سنقدم معلومات التتبع بمجرد شحن طلبك.',
+        'faq.warranty.q1': 'ما الضمان الذي تقدمونه؟',
+        'faq.warranty.a1': 'تختلف فترات الضمان حسب نوع المنتج والحالة. المنتجات الجديدة: 6-12 شهر، المنتجات المستعملة: 1-2 شهر. أجهزة الكمبيوتر المكتبية والمحمولة (المستعملة) لها ضمان شهرين، بينما المنتجات المستعملة الأخرى لها ضمان شهر واحد.',
+        'faq.warranty.q2': 'ماذا يغطي الضمان؟',
+        'faq.warranty.a2': 'ضماننا يغطي عيوب التصنيع وأعطال الأجهزة تحت الاستخدام العادي. يشمل خدمة إصلاح أو استبدال مجانية، استلام وتوصيل مجاني، ودعم تقني على مدار الساعة.',
+        'faq.warranty.q3': 'كيف يمكنني المطالبة بخدمة الضمان؟',
+        'faq.warranty.a3': 'اتصل بنا عبر واتساب على +212779318061 مع إيصال الشراء ووصف المشكلة. سنرتب استلام مجاني، ونقيم المشكلة، ونقدم إصلاح أو استبدال خلال 3-5 أيام.',
+        'faq.technical.q1': 'هل تقدمون دعم تقني؟',
+        'faq.technical.a1': 'نعم، نقدم دعم تقني على مدار الساعة لجميع منتجاتنا. فريق الخبراء لدينا يمكنه المساعدة في الإعداد واستكشاف الأخطاء وإصلاحها وأسئلة الصيانة عبر واتساب أو الهاتف.',
+        'faq.technical.q2': 'هل يمكنكم المساعدة في إعداد الكمبيوتر؟',
+        'faq.technical.a2': 'بالطبع! نقدم مساعدة إعداد مجانية لجميع أجهزة الكمبيوتر. فريقنا يمكنه المساعدة في التكوين الأولي وتثبيت البرامج واستكشاف الأخطاء الأساسية.',
+        'faq.technical.q3': 'ماذا لو احتجت تثبيت برامج؟',
+        'faq.technical.a3': 'يمكننا المساعدة في تثبيت وتكوين البرامج. اتصل بنا لمناقشة احتياجاتك البرمجية المحددة وسنقدم المساعدة المناسبة.',
+        'faq.contact.title': 'لا تزال لديك أسئلة؟',
+        'faq.contact.desc': 'لا تجد الإجابة التي تبحث عنها؟ فريق الدعم لدينا هنا لمساعدتك!',
+        'faq.contact.whatsapp': 'دعم واتساب',
+        'faq.contact.phone': 'اتصل بنا'
     }
 };
 
@@ -1300,10 +1409,40 @@ function closeSupportModal() {
     }
 }
 
+// FAQ functionality
+function initializeFAQ() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close all other FAQ items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            
+            // Toggle current item
+            if (isActive) {
+                item.classList.remove('active');
+            } else {
+                item.classList.add('active');
+            }
+        });
+    });
+}
+
 // Initialize support form when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     const supportForm = document.getElementById('supportForm');
     if (supportForm) {
         supportForm.addEventListener('submit', handleSupportFormSubmit);
     }
+    
+    // Initialize FAQ functionality
+    initializeFAQ();
 });
