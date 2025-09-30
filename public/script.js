@@ -57,6 +57,12 @@ function setupEventListeners() {
     footerLinks.forEach(link => {
         link.addEventListener('click', handleNavigation);
     });
+    
+    // Support navigation links
+    const supportNavLinks = document.querySelectorAll('.support-nav-link');
+    supportNavLinks.forEach(link => {
+        link.addEventListener('click', handleNavigation);
+    });
 
     // Mobile menu
     hamburger.addEventListener('click', toggleMobileMenu);
