@@ -816,7 +816,34 @@ const translations = {
         'footer.technical_support': 'Technical Support',
         'footer.secure_payment': 'Secure Payment',
         'footer.free_delivery': 'Free Delivery',
-        'footer.support_24_7': '24/7 Support'
+        'footer.support_24_7': '24/7 Support',
+        'support.title': 'Customer Support',
+        'support.subtitle': 'We\'re here to help! Please fill out the form below and we\'ll get back to you as soon as possible.',
+        'support.name': 'Full Name *',
+        'support.email': 'Email Address *',
+        'support.phone': 'Phone Number *',
+        'support.type': 'Support Type *',
+        'support.select_type': 'Select Support Type',
+        'support.warranty': 'Warranty Claim',
+        'support.returns': 'Returns & Refunds',
+        'support.technical': 'Technical Support',
+        'support.general': 'General Inquiry',
+        'support.order': 'Order Support',
+        'support.product': 'Product Information',
+        'support.description': 'Problem Description *',
+        'support.urgency': 'Urgency Level',
+        'support.urgency_low': 'Low - General Question',
+        'support.urgency_medium': 'Medium - Need Help Soon',
+        'support.urgency_high': 'High - Urgent Issue',
+        'support.terms': 'I agree to the terms and conditions',
+        'support.submit': 'Submit Support Request',
+        'support.reset': 'Reset Form',
+        'support.response_time': 'Response Time',
+        'support.response_time_desc': 'We typically respond within 2-4 hours during business hours (9AM-6PM)',
+        'support.urgent': 'Urgent Issues',
+        'support.urgent_desc': 'For urgent matters, call us directly at +212779318061',
+        'support.whatsapp': 'WhatsApp Support',
+        'support.whatsapp_desc': 'Quick support via WhatsApp: +212779318061'
     },
     fr: {
         'nav.home': 'Accueil',
@@ -863,7 +890,34 @@ const translations = {
         'footer.technical_support': 'Support technique',
         'footer.secure_payment': 'Paiement sécurisé',
         'footer.free_delivery': 'Livraison gratuite',
-        'footer.support_24_7': 'Support 24/7'
+        'footer.support_24_7': 'Support 24/7',
+        'support.title': 'Support Client',
+        'support.subtitle': 'Nous sommes là pour vous aider ! Veuillez remplir le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.',
+        'support.name': 'Nom Complet *',
+        'support.email': 'Adresse Email *',
+        'support.phone': 'Numéro de Téléphone *',
+        'support.type': 'Type de Support *',
+        'support.select_type': 'Sélectionner le Type de Support',
+        'support.warranty': 'Réclamation de Garantie',
+        'support.returns': 'Retours et Remboursements',
+        'support.technical': 'Support Technique',
+        'support.general': 'Demande Générale',
+        'support.order': 'Support Commande',
+        'support.product': 'Informations Produit',
+        'support.description': 'Description du Problème *',
+        'support.urgency': 'Niveau d\'Urgence',
+        'support.urgency_low': 'Faible - Question Générale',
+        'support.urgency_medium': 'Moyen - Besoin d\'Aide Bientôt',
+        'support.urgency_high': 'Élevé - Problème Urgent',
+        'support.terms': 'J\'accepte les termes et conditions',
+        'support.submit': 'Soumettre la Demande de Support',
+        'support.reset': 'Réinitialiser le Formulaire',
+        'support.response_time': 'Temps de Réponse',
+        'support.response_time_desc': 'Nous répondons généralement dans les 2-4 heures pendant les heures ouvrables (9h-18h)',
+        'support.urgent': 'Problèmes Urgents',
+        'support.urgent_desc': 'Pour les questions urgentes, appelez-nous directement au +212779318061',
+        'support.whatsapp': 'Support WhatsApp',
+        'support.whatsapp_desc': 'Support rapide via WhatsApp : +212779318061'
     },
     ar: {
         'nav.home': 'الرئيسية',
@@ -910,6 +964,182 @@ const translations = {
         'footer.technical_support': 'الدعم التقني',
         'footer.secure_payment': 'دفع آمن',
         'footer.free_delivery': 'توصيل مجاني',
-        'footer.support_24_7': 'دعم 24/7'
+        'footer.support_24_7': 'دعم 24/7',
+        'support.title': 'دعم العملاء',
+        'support.subtitle': 'نحن هنا لمساعدتك! يرجى ملء النموذج أدناه وسنرد عليك في أقرب وقت ممكن.',
+        'support.name': 'الاسم الكامل *',
+        'support.email': 'عنوان البريد الإلكتروني *',
+        'support.phone': 'رقم الهاتف *',
+        'support.type': 'نوع الدعم *',
+        'support.select_type': 'اختر نوع الدعم',
+        'support.warranty': 'مطالبة الضمان',
+        'support.returns': 'الإرجاع والاسترداد',
+        'support.technical': 'الدعم التقني',
+        'support.general': 'استفسار عام',
+        'support.order': 'دعم الطلب',
+        'support.product': 'معلومات المنتج',
+        'support.description': 'وصف المشكلة *',
+        'support.urgency': 'مستوى الأولوية',
+        'support.urgency_low': 'منخفض - سؤال عام',
+        'support.urgency_medium': 'متوسط - تحتاج مساعدة قريباً',
+        'support.urgency_high': 'عالي - مشكلة عاجلة',
+        'support.terms': 'أوافق على الشروط والأحكام',
+        'support.submit': 'إرسال طلب الدعم',
+        'support.reset': 'إعادة تعيين النموذج',
+        'support.response_time': 'وقت الاستجابة',
+        'support.response_time_desc': 'نرد عادة خلال 2-4 ساعات خلال ساعات العمل (9ص-6م)',
+        'support.urgent': 'المشاكل العاجلة',
+        'support.urgent_desc': 'للأمور العاجلة، اتصل بنا مباشرة على +212779318061',
+        'support.whatsapp': 'دعم واتساب',
+        'support.whatsapp_desc': 'دعم سريع عبر واتساب: +212779318061'
     }
 };
+
+// Support form functions
+function resetSupportForm() {
+    document.getElementById('supportForm').reset();
+}
+
+function handleSupportFormSubmit(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(e.target);
+    const supportData = {
+        name: formData.get('customerName'),
+        email: formData.get('customerEmail'),
+        phone: formData.get('customerPhone'),
+        type: formData.get('supportType'),
+        product: formData.get('productInfo'),
+        description: formData.get('problemDescription'),
+        urgency: formData.get('urgency'),
+        terms: formData.get('agreeTerms')
+    };
+    
+    // Create WhatsApp message
+    const message = createSupportMessage(supportData);
+    const whatsappUrl = `https://wa.me/212779318061?text=${encodeURIComponent(message)}`;
+    
+    // Open WhatsApp
+    window.open(whatsappUrl, '_blank');
+    
+    // Show success message
+    showSupportSuccess();
+    
+    // Reset form
+    resetSupportForm();
+}
+
+function createSupportMessage(data) {
+    const urgencyText = {
+        'low': 'Low Priority',
+        'medium': 'Medium Priority', 
+        'high': 'HIGH PRIORITY'
+    };
+    
+    return `🔧 PIXEL PAD Support Request
+
+👤 Customer: ${data.name}
+📧 Email: ${data.email}
+📱 Phone: ${data.phone}
+
+🎯 Support Type: ${data.type}
+${data.product ? `🛍️ Product: ${data.product}` : ''}
+⚡ Urgency: ${urgencyText[data.urgency] || 'Not specified'}
+
+📝 Problem Description:
+${data.description}
+
+✅ Terms Accepted: ${data.terms ? 'Yes' : 'No'}
+
+Please provide assistance for this customer.`;
+}
+
+function showSupportSuccess() {
+    // Create success modal
+    const modal = document.createElement('div');
+    modal.className = 'support-success-modal';
+    modal.innerHTML = `
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Support Request Submitted!</h3>
+            <p>Your support request has been sent to our team. We'll get back to you within 2-4 hours during business hours.</p>
+            <button onclick="closeSupportModal()" class="btn btn-primary">OK</button>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    
+    // Add modal styles
+    const style = document.createElement('style');
+    style.textContent = `
+        .support-success-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .support-success-modal .modal-content {
+            background: var(--bg-secondary);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 500px;
+            margin: 20px;
+            animation: slideUp 0.3s ease;
+        }
+        
+        .support-success-modal .modal-icon {
+            font-size: 4rem;
+            color: #10b981;
+            margin-bottom: 20px;
+        }
+        
+        .support-success-modal h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+        
+        .support-success-modal p {
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+function closeSupportModal() {
+    const modal = document.querySelector('.support-success-modal');
+    if (modal) {
+        modal.remove();
+    }
+}
+
+// Initialize support form when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    const supportForm = document.getElementById('supportForm');
+    if (supportForm) {
+        supportForm.addEventListener('submit', handleSupportFormSubmit);
+    }
+});

@@ -446,6 +446,113 @@
                 </div>
             </div>
         </section>
+
+        <!-- Support Section -->
+        <section id="support" class="section">
+            <div class="support-container">
+                <div class="support-header">
+                    <h2 class="support-title" data-translate="support.title">Customer Support</h2>
+                    <p class="support-subtitle" data-translate="support.subtitle">We're here to help! Please fill out the form below and we'll get back to you as soon as possible.</p>
+                </div>
+                
+                <div class="support-content">
+                    <div class="support-form-container">
+                        <form class="support-form" id="supportForm">
+                            <div class="form-group">
+                                <label for="customerName" data-translate="support.name">Full Name *</label>
+                                <input type="text" id="customerName" name="customerName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="customerEmail" data-translate="support.email">Email Address *</label>
+                                <input type="email" id="customerEmail" name="customerEmail" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="customerPhone" data-translate="support.phone">Phone Number *</label>
+                                <input type="tel" id="customerPhone" name="customerPhone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="supportType" data-translate="support.type">Support Type *</label>
+                                <select id="supportType" name="supportType" required>
+                                    <option value="" data-translate="support.select_type">Select Support Type</option>
+                                    <option value="warranty" data-translate="support.warranty">Warranty Claim</option>
+                                    <option value="returns" data-translate="support.returns">Returns & Refunds</option>
+                                    <option value="technical" data-translate="support.technical">Technical Support</option>
+                                    <option value="general" data-translate="support.general">General Inquiry</option>
+                                    <option value="order" data-translate="support.order">Order Support</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="productInfo" data-translate="support.product">Product Information</label>
+                                <input type="text" id="productInfo" name="productInfo" placeholder="Model, Serial Number, or Product Name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="problemDescription" data-translate="support.description">Problem Description *</label>
+                                <textarea id="problemDescription" name="problemDescription" rows="5" required placeholder="Please describe your issue in detail..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="urgency" data-translate="support.urgency">Urgency Level</label>
+                                <select id="urgency" name="urgency">
+                                    <option value="low" data-translate="support.urgency_low">Low - General Question</option>
+                                    <option value="medium" data-translate="support.urgency_medium">Medium - Need Help Soon</option>
+                                    <option value="high" data-translate="support.urgency_high">High - Urgent Issue</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                                    <span class="checkmark"></span>
+                                    <span data-translate="support.terms">I agree to the terms and conditions</span>
+                                </label>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary" data-translate="support.submit">Submit Support Request</button>
+                                <button type="button" class="btn btn-secondary" onclick="resetSupportForm()" data-translate="support.reset">Reset Form</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="support-info">
+                        <div class="support-card">
+                            <div class="support-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="support-content-text">
+                                <h4 data-translate="support.response_time">Response Time</h4>
+                                <p data-translate="support.response_time_desc">We typically respond within 2-4 hours during business hours (9AM-6PM)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="support-card">
+                            <div class="support-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="support-content-text">
+                                <h4 data-translate="support.urgent">Urgent Issues</h4>
+                                <p data-translate="support.urgent_desc">For urgent matters, call us directly at +212779318061</p>
+                            </div>
+                        </div>
+                        
+                        <div class="support-card">
+                            <div class="support-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="support-content-text">
+                                <h4 data-translate="support.whatsapp">WhatsApp Support</h4>
+                                <p data-translate="support.whatsapp_desc">Quick support via WhatsApp: +212779318061</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -497,10 +604,10 @@
             <div class="footer-section">
                 <h4 class="footer-title" data-translate="footer.support">Support</h4>
                 <ul class="footer-links">
-                    <li><a href="https://wa.me/212779318061?text=Hello%20PIXEL%20PAD,%20I%20need%20help%20with%20warranty%20information" target="_blank" class="footer-link" data-translate="footer.warranty">Warranty</a></li>
-                    <li><a href="https://wa.me/212779318061?text=Hello%20PIXEL%20PAD,%20I%20need%20help%20with%20returns" target="_blank" class="footer-link" data-translate="footer.returns">Returns</a></li>
-                    <li><a href="https://wa.me/212779318061?text=Hello%20PIXEL%20PAD,%20I%20have%20a%20question" target="_blank" class="footer-link" data-translate="footer.faq">FAQ</a></li>
-                    <li><a href="https://wa.me/212779318061?text=Hello%20PIXEL%20PAD,%20I%20need%20technical%20support" target="_blank" class="footer-link" data-translate="footer.technical_support">Technical Support</a></li>
+                    <li><a href="#support" class="footer-link" data-translate="footer.warranty">Warranty</a></li>
+                    <li><a href="#support" class="footer-link" data-translate="footer.returns">Returns</a></li>
+                    <li><a href="#support" class="footer-link" data-translate="footer.faq">FAQ</a></li>
+                    <li><a href="#support" class="footer-link" data-translate="footer.technical_support">Technical Support</a></li>
                 </ul>
             </div>
         </div>
