@@ -125,7 +125,7 @@ function handleNavigation(e) {
     
     // Close mobile menu if open
     if (navMenu) {
-        navMenu.classList.remove('active');
+    navMenu.classList.remove('active');
     }
     if (hamburger) {
         hamburger.setAttribute('aria-expanded', 'false');
@@ -794,7 +794,29 @@ const translations = {
         'about.features.warranty': '8-Month Warranty',
         'about.features.warranty_desc': 'Comprehensive warranty on all products',
         'about.features.payment': 'Pay on Delivery',
-        'about.features.payment_desc': 'No upfront payment required'
+        'about.features.payment_desc': 'No upfront payment required',
+        'contact.title': 'Contact Us',
+        'contact.subtitle': 'Get in touch with us for any inquiries or support',
+        'contact.address': 'Address',
+        'contact.phone': 'Phone & WhatsApp',
+        'contact.whatsapp': 'WhatsApp',
+        'contact.email': 'Email',
+        'contact.hours': 'Business Hours',
+        'contact.hours_weekdays': 'Mon-Fri: 9AM-6PM',
+        'contact.hours_saturday': 'Sat: 10AM-4PM',
+        'footer.quick_links': 'Quick Links',
+        'footer.categories': 'Categories',
+        'footer.support': 'Support',
+        'footer.desktops': 'Desktops',
+        'footer.laptops': 'Laptops',
+        'footer.accessories': 'Accessories',
+        'footer.warranty': 'Warranty',
+        'footer.returns': 'Returns',
+        'footer.faq': 'FAQ',
+        'footer.technical_support': 'Technical Support',
+        'footer.secure_payment': 'Secure Payment',
+        'footer.free_delivery': 'Free Delivery',
+        'footer.support_24_7': '24/7 Support'
     },
     fr: {
         'nav.home': 'Accueil',
@@ -819,7 +841,29 @@ const translations = {
         'about.features.warranty': 'Garantie 8 mois',
         'about.features.warranty_desc': 'Garantie complète sur tous les produits',
         'about.features.payment': 'Paiement à la livraison',
-        'about.features.payment_desc': 'Aucun paiement initial requis'
+        'about.features.payment_desc': 'Aucun paiement initial requis',
+        'contact.title': 'Contactez-nous',
+        'contact.subtitle': 'Contactez-nous pour toute question ou support',
+        'contact.address': 'Adresse',
+        'contact.phone': 'Téléphone & WhatsApp',
+        'contact.whatsapp': 'WhatsApp',
+        'contact.email': 'Email',
+        'contact.hours': 'Heures d\'ouverture',
+        'contact.hours_weekdays': 'Lun-Ven: 9h-18h',
+        'contact.hours_saturday': 'Sam: 10h-16h',
+        'footer.quick_links': 'Liens rapides',
+        'footer.categories': 'Catégories',
+        'footer.support': 'Support',
+        'footer.desktops': 'Ordinateurs de bureau',
+        'footer.laptops': 'Ordinateurs portables',
+        'footer.accessories': 'Accessoires',
+        'footer.warranty': 'Garantie',
+        'footer.returns': 'Retours',
+        'footer.faq': 'FAQ',
+        'footer.technical_support': 'Support technique',
+        'footer.secure_payment': 'Paiement sécurisé',
+        'footer.free_delivery': 'Livraison gratuite',
+        'footer.support_24_7': 'Support 24/7'
     },
     ar: {
         'nav.home': 'الرئيسية',
@@ -844,6 +888,28 @@ const translations = {
         'about.features.warranty': 'ضمان 8 أشهر',
         'about.features.warranty_desc': 'ضمان شامل على جميع المنتجات',
         'about.features.payment': 'الدفع عند الاستلام',
-        'about.features.payment_desc': 'لا يتطلب دفع مقدم'
+        'about.features.payment_desc': 'لا يتطلب دفع مقدم',
+        'contact.title': 'اتصل بنا',
+        'contact.subtitle': 'تواصل معنا لأي استفسارات أو دعم',
+        'contact.address': 'العنوان',
+        'contact.phone': 'الهاتف وواتساب',
+        'contact.whatsapp': 'واتساب',
+        'contact.email': 'البريد الإلكتروني',
+        'contact.hours': 'ساعات العمل',
+        'contact.hours_weekdays': 'الاثنين-الجمعة: 9ص-6م',
+        'contact.hours_saturday': 'السبت: 10ص-4م',
+        'footer.quick_links': 'روابط سريعة',
+        'footer.categories': 'الفئات',
+        'footer.support': 'الدعم',
+        'footer.desktops': 'أجهزة سطح المكتب',
+        'footer.laptops': 'أجهزة الكمبيوتر المحمولة',
+        'footer.accessories': 'الملحقات',
+        'footer.warranty': 'الضمان',
+        'footer.returns': 'الإرجاع',
+        'footer.faq': 'الأسئلة الشائعة',
+        'footer.technical_support': 'الدعم التقني',
+        'footer.secure_payment': 'دفع آمن',
+        'footer.free_delivery': 'توصيل مجاني',
+        'footer.support_24_7': 'دعم 24/7'
     }
 };
