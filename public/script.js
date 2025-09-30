@@ -51,6 +51,12 @@ function setupEventListeners() {
     navLinks.forEach(link => {
         link.addEventListener('click', handleNavigation);
     });
+    
+    // Footer navigation links
+    const footerLinks = document.querySelectorAll('.footer-link');
+    footerLinks.forEach(link => {
+        link.addEventListener('click', handleNavigation);
+    });
 
     // Mobile menu
     hamburger.addEventListener('click', toggleMobileMenu);
@@ -86,9 +92,11 @@ function handleNavigation(e) {
     e.preventDefault();
     const targetId = e.target.getAttribute('href').substring(1);
     
-    // Update active nav link
+    // Update active nav link (only for main nav links)
+    if (e.target.classList.contains('nav-link')) {
     navLinks.forEach(link => link.classList.remove('active'));
     e.target.classList.add('active');
+    }
     
     // Show target section
     sections.forEach(section => section.classList.remove('active'));
@@ -112,8 +120,16 @@ function handleNavigation(e) {
         }
     }
     
-    // Close mobile menu
+    // Close mobile menu if open
+    if (navMenu) {
     navMenu.classList.remove('active');
+    }
+    if (hamburger) {
+        hamburger.setAttribute('aria-expanded', 'false');
+    }
+    
+    // Scroll to top of the page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Mobile menu toggle
@@ -188,7 +204,7 @@ function filterProducts(category) {
         filteredProducts = products.filter(product => product.category === category);
     }
     
-    displayProducts(filteredProducts);
+        displayProducts(filteredProducts);
 }
 
 // Show product details modal
@@ -199,20 +215,20 @@ function showProductDetails(productId) {
     productDetails.innerHTML = `
         <div class="product-detail-content">
             <div class="product-detail-image">
-                <i class="fas fa-desktop"></i>
-            </div>
+            <i class="fas fa-desktop"></i>
+        </div>
             <div class="product-detail-info">
-                <h2>${product.name}</h2>
+            <h2>${product.name}</h2>
                 <p class="product-detail-description">${product.description}</p>
                 <div class="product-detail-price">$${product.price}</div>
                 <div class="product-detail-actions">
-                    <div class="quantity-controls">
-                        <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+                <div class="quantity-controls">
+                    <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
                         <input type="number" id="modal-quantity" value="1" min="1" class="quantity-input">
-                        <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
-                    </div>
-                    <button class="btn btn-primary btn-large" onclick="addToCartFromModal(${product.id})">Add to Cart</button>
+                    <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
                 </div>
+                    <button class="btn btn-primary btn-large" onclick="addToCartFromModal(${product.id})">Add to Cart</button>
+            </div>
             </div>
         </div>
     `;
@@ -266,13 +282,13 @@ function addToCartFromModal(productId) {
     
     if (existingItem) {
         existingItem.quantity += quantity;
-    } else {
-        cart.push({
-            id: product.id,
-            name: product.name,
-            price: product.price,
+        } else {
+            cart.push({
+                id: product.id,
+                name: product.name,
+                price: product.price,
             quantity: quantity
-        });
+            });
     }
     
     updateCartDisplay();
@@ -415,11 +431,11 @@ function handleCheckout(e) {
     const orderData = {
         id: Date.now().toString(),
         customer: {
-            name: formData.get('name'),
-            phone: formData.get('phone'),
-            email: formData.get('email'),
-            address: formData.get('address'),
-            notes: formData.get('notes')
+        name: formData.get('name'),
+        phone: formData.get('phone'),
+        email: formData.get('email'),
+        address: formData.get('address'),
+        notes: formData.get('notes')
         },
         items: [...cart],
         total: cart.reduce((sum, item) => sum + (item.price * item.quantity), 0),
@@ -432,11 +448,11 @@ function handleCheckout(e) {
     localStorage.setItem('orders', JSON.stringify(orders));
     
     // Clear cart
-    cart = [];
+            cart = [];
     updateCartDisplay();
-    saveCart();
-    
-    // Show success modal
+            saveCart();
+
+// Show success modal
     document.getElementById('order-id').textContent = orderData.id;
     successModal.style.display = 'block';
     
@@ -466,9 +482,9 @@ function handleAdminLogin(e) {
         currentUser = { username, role: 'admin' };
         localStorage.setItem('adminToken', 'admin-token');
         localStorage.setItem('adminUser', JSON.stringify(currentUser));
-        showAdminDashboard();
+            showAdminDashboard();
         showNotification('Login successful!', 'success');
-    } else {
+        } else {
         showNotification('Invalid credentials', 'error');
     }
 }
@@ -651,13 +667,13 @@ function setTheme(theme) {
     const themeIcon = document.getElementById('theme-icon');
     const themeToggle = document.getElementById('theme-toggle');
     
-    if (theme === 'dark') {
+        if (theme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
-        themeIcon.className = 'fas fa-sun';
+            themeIcon.className = 'fas fa-sun';
         localStorage.setItem('theme', 'dark');
-    } else {
+        } else {
         document.documentElement.removeAttribute('data-theme');
-        themeIcon.className = 'fas fa-moon';
+            themeIcon.className = 'fas fa-moon';
         localStorage.setItem('theme', 'light');
     }
 }
